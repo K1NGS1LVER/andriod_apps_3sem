@@ -1,0 +1,24 @@
+<resources>
+    <style name="CalculatorButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/ios_white</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="CalculatorButton.Gray">
+        <item name="android:background">@drawable/button_background_gray</item>
+        <item name="android:textColor">@color/ios_black</item>
+    </style>
+
+    <style name="CalculatorButton.DarkGray">
+        <item name="android:background">@drawable/button_background_dark_gray</item>
+    </style>
+
+    <style name="CalculatorButton.Orange">
+        <item name="android:background">@drawable/button_background_orange</item>
+    </style>
+</resources>

@@ -1,0 +1,39 @@
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (contains personal SDK path)
+local.properties
+
+# Android Studio / IntelliJ IDEA files
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Android Studio - navigation editor temp files
+.navigation/
+
+# Captures (profiling)
+captures/
+
+# Asset Delivery
+.cxx/
+*.apk
+*.ap_
+*.aab
+
+# External native build folder
+.externalNativeBuild/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Kotlin
+.kotlin/
+
+# Jetpack Compose (if using Compose Compiler reports)
+compose_compiler_config.json

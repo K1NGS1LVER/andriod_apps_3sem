@@ -37,3 +37,18 @@ desktop.ini
 
 # Jetpack Compose (if using Compose Compiler reports)
 compose_compiler_config.json
+
+# Large Binary / Media files
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.dmg
+*.zip
+*.tar*
+*.rar
+*.7z
+*.exe
+*.msi
+*.log
+*.tmp

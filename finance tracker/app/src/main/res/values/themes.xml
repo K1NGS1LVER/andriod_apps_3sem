@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base theme required by SplashScreen API -->
+    <style name="Theme.FinanceTracker.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#0A1628</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.FinanceTracker</item>
+    </style>
+
+    <style name="Theme.FinanceTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

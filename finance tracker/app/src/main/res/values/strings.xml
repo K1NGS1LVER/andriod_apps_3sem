@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FinTrack</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="history">History</string>
+    <string name="analytics">Analytics</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="income">Income</string>
+    <string name="expenses">Expenses</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="no_transactions">No transactions yet</string>
+    <string name="add_first_transaction">Tap + to add your first transaction</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="note">Note (optional)</string>
+    <string name="date">Date</string>
+    <string name="save_transaction">Save Transaction</string>
+    <string name="streak">Day Streak</string>
+    <string name="goals">Goals</string>
+    <string name="analytics_title">Analytics</string>
+    <string name="spending_category">Spending by Category</string>
+    <string name="monthly_breakdown">Monthly Breakdown</string>
+</resources>

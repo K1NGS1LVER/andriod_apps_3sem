@@ -1,0 +1,41 @@
+package com.danielpaul.financetracker.data.local
+
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import androidx.room.Update
+import kotlinx.coroutines.flow.Flow
+
+@Dao
+interface TransactionDao {
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertTransaction(transaction: TransactionEntity)
+
+    @Update
+    suspend fun updateTransaction(transaction: TransactionEntity)
+
+    @Delete
+    suspend fun deleteTransaction(transaction: TransactionEntity)
+
+    @Query("SELECT * FROM transactions WHERE id = :id")
+    suspend fun getTransactionById(id: Int): TransactionEntity?
+
+    @Query("SELECT * FROM transactions ORDER BY date DESC")
+    fun getAllTransactions(): Flow<List<TransactionEntity>>
+
+    @Query("SELECT * FROM transactions ORDER BY date DESC LIMIT :limit")
+    fun getRecentTransactions(limit: Int): Flow<List<TransactionEntity>>
+
+    @Query("""
+        SELECT * FROM transactions 
+        WHERE strftime('%Y-%m', date / 1000, 'unixepoch') = :yearMonth 
+        ORDER BY date DESC
+    """)
+    fun getTransactionsByMonth(yearMonth: String): Flow<List<TransactionEntity>>
+
+    @Query("SELECT * FROM transactions WHERE category = :category ORDER BY date DESC")
+    fun getTransactionsByCategory(category: String): Flow<List<TransactionEntity>>
+}

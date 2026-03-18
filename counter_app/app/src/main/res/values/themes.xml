@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <style name="Theme.Counter_app" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.ConferenceApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/christ_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/christ_gold</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorSurfaceContainer">@color/surface_tint</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
 </resources>

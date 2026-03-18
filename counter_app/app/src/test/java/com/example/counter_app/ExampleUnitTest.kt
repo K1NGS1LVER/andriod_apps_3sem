@@ -1,4 +1,4 @@
-package com.example.counter_app
+package com.christ.conferenceapp
 
 import org.junit.Test
 
